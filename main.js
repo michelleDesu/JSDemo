@@ -47,3 +47,29 @@ document.getElementById("secret").addEventListener("mouseleave", function(){
 
     document.getElementsByTagName("h2")[0].innerHTML = "Secret under this text?";
 });
+
+
+//-----------------------------------------------------
+
+var ticTacBoard = document.getElementById("ticTacBoard");
+
+ticTacBoard.style.width = "300px";
+ticTacBoard.style.height = "300px";
+ticTacBoard.style.backgroundColor = "gray";
+
+for(var i = 0; i< ticTacBoard.children.length ; i++){
+    var element = ticTacBoard.children[i];
+    element.style.height = "100px";
+    element.style.width = "100px";
+
+    element.style.float = "left";
+
+    if(i % 2 === 0){
+        element.style.backgroundColor = "white";
+    }else{
+        element.style.backgroundColor = "black";
+    }
+}
+
+TimeToClick(){
+}
